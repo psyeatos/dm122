@@ -1,0 +1,68 @@
+<link rel="manifest" href="/manifest.json" />
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PWA de Pokémon</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Gerenciador de Pokémon</h1>
+
+    <form id="pokemonForm">
+      <input
+        type="text"
+        id="pokemonName"
+        placeholder="Nome do Pokémon"
+        required
+      />
+      <input
+        type="text"
+        id="pokemonType"
+        placeholder="Tipo do Pokémon"
+        required
+      />
+      <input
+        type="number"
+        id="pokemonLevel"
+        placeholder="Nível do Pokémon"
+        required
+      />
+      <button type="submit">Adicionar Pokémon</button>
+    </form>
+
+    <div id="pokemonList"></div>
+
+    <!-- Modal para Edição de Pokémon -->
+    <div id="editModal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>Editar Pokémon</h2>
+        <form id="editForm">
+          <input
+            type="text"
+            id="editPokemonName"
+            placeholder="Nome do Pokémon"
+            required
+          />
+          <input
+            type="text"
+            id="editPokemonType"
+            placeholder="Tipo do Pokémon"
+            required
+          />
+          <input
+            type="number"
+            id="editPokemonLevel"
+            placeholder="Nível do Pokémon"
+            required
+          />
+          <button type="submit">Salvar Alterações</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

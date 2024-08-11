@@ -1,0 +1,140 @@
+/* Reseta o estilo padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilo do título principal */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffcc00;
+  text-shadow: 2px 2px #555;
+}
+
+/* Estilo do formulário */
+form {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Estilo dos campos de input */
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Estilo do botão de submit */
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 4px;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #ffb700;
+}
+
+/* Estilo da lista de Pokémon */
+#pokemonList {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de cada item da lista */
+.pokemon-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.pokemon-item:last-child {
+  border-bottom: none;
+}
+
+/* Estilo dos botões de ação (editar, deletar) */
+button.action-button {
+  background-color: #ff6666;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 5px;
+}
+
+button.action-button:hover {
+  background-color: #ff4c4c;
+}
+
+/* Estilo para o Modal */
+.modal {
+  display: none; /* Oculto por padrão */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
